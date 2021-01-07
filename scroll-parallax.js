@@ -11,14 +11,15 @@ const moon = document.getElementsByClassName('moon');
 const sun = document.getElementsByClassName('sun');
 
 window.addEventListener('scroll', () => {
+  // Moon Positioning
   moon[0].style.top = 100 - (scrollY - section1Offtop)/20 + '%';
   moon[0].style.left = (scrollY - section1Offtop)/20 + '%';
 
-  console.log(scrollY, section2Offtop, scrollY - section2Offtop, (scrollY - section2Offtop)/30)
-
+  // Sun Positioning
   sun[0].style.top = 0 - (scrollY - section2Offtop)/30 +'%';
   sun[0].style.right = 70 + (scrollY - section2Offtop)/30 + '%';
 
+  // Box Positioning
   box1[0].style.top = 50 + (scrollY - sectionOfftop)/30 + '%';
   box2[0].style.top = 50 + (scrollY - sectionOfftop)/50 + '%';
   box3[0].style.top = 50 + (scrollY - sectionOfftop)/70 + '%';  

@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scroll Parallax</title>
   <style>
-    body{ margin: 0; }
-    section{ height: 100vh; border: 3px solid black; }
+    body { margin: 0; }
+    
+    section { position: relative; height: 100vh; border: 3px solid black; }
     .section1 { 
       position: relative; 
       background-color: black; 
       overflow: hidden; 
     }
+    .section2 { position: relative; background-color: skyblue; overflow: hidden; }
+
     .moon { 
       position: absolute; 
       left: 50%; transform: translate(-50%, -50%); 
@@ -20,7 +23,6 @@
       border-radius: 50%;
       box-shadow: 0 0 100px yellow; 
     }
-    .section2 { position: relative; background-color: skyblue; overflow: hidden; }
     .sun { 
       position: absolute; 
       top: 100%;  transform: translate(-50%, -50%); 
@@ -29,7 +31,6 @@
       background-color: rgb(243, 243, 22); 
       box-shadow: 0 0 100px yellow; 
     }
-    .section { position: relative; }
     .box { 
       position: absolute; 
       width: 200px; height: 200px; transform: translate(-50%, -50%);
