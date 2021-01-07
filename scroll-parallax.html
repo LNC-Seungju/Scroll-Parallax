@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Parallax</title>
+  <style>
+    body{ margin: 0; }
+    section{ height: 100vh; border: 3px solid black; }
+    .section1 { 
+      position: relative; 
+      background-color: black; 
+      overflow: hidden; 
+    }
+    .moon { 
+      position: absolute; 
+      left: 50%; transform: translate(-50%, -50%); 
+      width: 200px; height: 200px; 
+      background-color: rgb(136, 136, 30); 
+      border-radius: 50%;
+      box-shadow: 0 0 100px yellow; 
+    }
+    .section2 { position: relative; background-color: skyblue; overflow: hidden; }
+    .sun { 
+      position: absolute; 
+      top: 100%;  transform: translate(-50%, -50%); 
+      width: 200px; height: 200px; 
+      border-radius: 50%; 
+      background-color: rgb(243, 243, 22); 
+      box-shadow: 0 0 100px yellow; 
+    }
+    .section { position: relative; }
+    .box { 
+      position: absolute; 
+      width: 200px; height: 200px; transform: translate(-50%, -50%);
+      border-radius: 50%; 
+    }
+    .box1 { left: 20%; background-color: teal; } 
+    .box2 { left: 50%; background-color: pink; }
+    .box3 { left: 80%; background-color: lightgray; }
+  </style>
+</head>
+<body>
+  
+  <section class="section1">
+    <div class="moon"></div>
+  </section>
+  <section class="section2">
+    <div class="sun"></div>
+  </section>
+  <section class="section">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </section>
+  <section></section>
+
+  <script src="./scroll-parallax.js"></script>
+</body>
+</html>
